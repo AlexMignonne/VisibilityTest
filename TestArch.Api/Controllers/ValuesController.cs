@@ -1,7 +1,7 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
+
 using Microsoft.AspNetCore.Mvc;
+
 using TestArch.Shared;
 
 namespace TestArch.Api.Controllers
@@ -19,13 +19,7 @@ namespace TestArch.Api.Controllers
 
         // GET api/values
         [HttpGet("{st}")]
-        public async Task<ActionResult<string>> Get(
-            [FromRoute] string st,
-            CancellationToken token)
-        {
-            return await _mediator.Send(
-                new TestCommand(st),
-                token);
-        }
+        public async Task<ActionResult<string>> Get([FromRoute] string st, CancellationToken token) =>
+            await _mediator.Send(new TestCommand(st), token);
     }
 }

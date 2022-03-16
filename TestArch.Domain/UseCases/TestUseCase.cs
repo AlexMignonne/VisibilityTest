@@ -1,12 +1,13 @@
-﻿using System.Threading;
+﻿using MediatR;
+
+using System.Threading;
 using System.Threading.Tasks;
-using MediatR;
+
 using TestArch.Shared;
 
 namespace TestArch.Domain.UseCases
 {
-    internal sealed class TestUseCase :
-        IRequestHandler<TestCommand, string>
+    internal sealed class TestUseCase : IRequestHandler<TestCommand, string>
     {
         private readonly ITestRepo _repo;
 
@@ -15,13 +16,7 @@ namespace TestArch.Domain.UseCases
             _repo = repo;
         }
 
-        public async Task<string> Handle(
-            TestCommand request,
-            CancellationToken token)
-        {
-            return await _repo.Mod(
-                request.Value,
-                token);
-        }
+        public async Task<string> Handle(TestCommand request, CancellationToken token) =>
+            await _repo.Mod(request.Value, token);
     }
 }

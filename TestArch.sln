@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestArch.Api", "TestArch.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestArch.Infra", "TestArch.Infra\TestArch.Infra.csproj", "{91EBC7AB-1702-42B9-962D-C7F4C17DB8E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArch.Shared", "TestArch.Shared\TestArch.Shared.csproj", "{376FE2B7-A7BC-4D0A-86A6-E9ABE0083CFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestArch.Shared", "TestArch.Shared\TestArch.Shared.csproj", "{376FE2B7-A7BC-4D0A-86A6-E9ABE0083CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{1071E2D1-C0BE-4070-BD0C-FB6EB7BF95E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{376FE2B7-A7BC-4D0A-86A6-E9ABE0083CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{376FE2B7-A7BC-4D0A-86A6-E9ABE0083CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376FE2B7-A7BC-4D0A-86A6-E9ABE0083CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1071E2D1-C0BE-4070-BD0C-FB6EB7BF95E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1071E2D1-C0BE-4070-BD0C-FB6EB7BF95E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1071E2D1-C0BE-4070-BD0C-FB6EB7BF95E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1071E2D1-C0BE-4070-BD0C-FB6EB7BF95E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

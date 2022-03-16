@@ -1,15 +1,14 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+
 using TestArch.Domain.UseCases;
 
 namespace TestArch.Domain
 {
     public static class StartupExtensions
     {
-        public static IServiceCollection AddDomain(
-            this IServiceCollection services)
+        public static IServiceCollection AddDomain(this IServiceCollection services)
         {
-            services
-                .AddTransient<TestUseCase>();
+            services.AddTransient<TestUseCase>();
 
             return services;
         }

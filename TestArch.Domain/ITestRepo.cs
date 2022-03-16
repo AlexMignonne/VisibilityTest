@@ -5,8 +5,6 @@ namespace TestArch.Domain
 {
     public interface ITestRepo
     {
-        Task<string> Mod(
-            string st,
-            CancellationToken token);
+        Task<string> Mod(string st, CancellationToken token);
     }
 }
